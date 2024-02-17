@@ -1,0 +1,11 @@
+body {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    transition: 0.4s ease;
+    scroll-behavior: smooth;
+    color: #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

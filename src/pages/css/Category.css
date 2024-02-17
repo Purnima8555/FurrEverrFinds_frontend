@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Playfair Display", sans-serif;
+}
+
+.container10 {
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    font-family: 'Playfair Display', sans-serif;
+    transition: 0.4s ease;
+    scroll-behavior: smooth;
+}
+
+header, footer {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+
+.featuredtitles h2 {
+    font-family: 'Leaves And Ground', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+}
+
+.quickrecipe-title h2 {
+    font-family: 'Leaves And Ground', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+}
+
+/* main start */
+/* featured recipe title */
+
+.featuredrecipe {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.featuredtitles {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.titleicon {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleicon img{
+    width: 20%;
+    height: 20%;
+}
+
+.titleicon::before {
+    content: '';
+    width: 20%;
+    height: 6px;
+    background: #ff6767 ;
+    background: linear-gradient(to right, transparent, #ff6767);
+    margin-right: 20px;
+}
+
+.titleicon::after {
+    content: '';
+    width: 20%;
+    height: 6px;
+    background: #ff6767 ;
+    background: linear-gradient(to right, #ff6767, transparent);
+    margin-right: 20px;
+}
+
+.featuredtitles h1 {
+    font-family: var(--font-family);
+    font-size: 45px;
+    color: #111;
+}
+
+.featuredtitles p {
+    max-width: 600px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+    font-family: "Playfair Display",'sans-serif';
+}
+
+
+/* explore quick recipes */
+.quickrecipe-title {
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.quickrecipe-title p {
+    max-width: 600px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+    font-family: "Playfair Display",'sans-serif';
+}
+
+.explorerecipe {
+    gap: 25px;
+    padding: 0 20px;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    /*background-color: black;*/
+}
+
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+    /* Adjustments for iPad mini screen */
+
+    .titleicon img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .featuredtitles h2,
+    .quickrecipe-title h2 {
+        font-size: 40px;
+    }
+
+    .featuredtitles p,
+    .quickrecipe-title p {
+        font-size: 14px;
+    }
+
+    .featuredrecipe,
+    .quickrecipe-title {
+        padding: 0 10px;
+    }
+
+    .explorerecipe {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
+/*footer*/

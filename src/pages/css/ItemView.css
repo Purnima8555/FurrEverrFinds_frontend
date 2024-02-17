@@ -1,0 +1,132 @@
+
+.item-container {
+    display: flex;
+    width: 90%;
+    overflow: hidden;
+    margin-left: 10vh;
+}
+
+.item-img-container {
+    flex: 2;
+    overflow: hidden;
+    border: 2px solid #9b9b9b;
+    border-radius: 30px;
+}
+
+.item-img-container img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.description-container {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-container h2 {
+    margin-top: 30px;
+    color: #181717;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.description-container h4 {
+    color: #151414;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.description-container h5 {
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.description-container p {
+    color: #363636;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.item-btn button {
+    background-color: rgba(143, 94, 47, 0.66);
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.item-btn button:hover {
+    background: rgba(80, 54, 29, 0.66);
+    cursor: pointer;
+}
+
+
+/*rate-comment*/
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-section p {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.rating-section span {
+    cursor: pointer;
+    font-size: 2.4rem;
+    margin-right: 5px;
+    color: grey;
+}
+
+.rating-section span.active {
+    color: orange;
+}
+
+.rating-section h4 {
+    color: #151414;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 15vh;
+}
+
+
+/* Responsive adjustments for 768x1024 screens */
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+    .item-container {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .item-img-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .description-container {
+        width: 80%;
+    }
+
+    .item-btn button {
+        width: 80%;
+    }
+
+    .rating-section h4 {
+        margin-left: 20px;
+        text-align: center;
+    }
+}

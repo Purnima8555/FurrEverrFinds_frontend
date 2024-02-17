@@ -1,0 +1,47 @@
+.userProfileContainer {
+    padding: 20px;
+    /*border: 1px solid #ddd;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-part {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    font-size: 24px;
+    width: 120px;
+    height: 120px;
+    background-color: #c5c3c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    justify-content: start;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.favorite-recipes {
+    width: 100%;
+    text-align: center; /* Moved from a duplicate entry */
+    margin-left: 50px;
+}
+.recipes-container{
+    display: flex;
+    gap: 50px;
+}

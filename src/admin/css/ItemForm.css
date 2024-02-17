@@ -1,0 +1,77 @@
+/* Form Layout */
+
+.admin-back {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.admin-back a {
+    color: rgba(143, 94, 47, 0.66);
+}
+
+.admin-back a:hover {
+    color: rgba(80, 54, 29, 0.66);
+    cursor: pointer;
+}
+
+.content-form form {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Input and Textarea Styling */
+.content-form input[type="text"],
+.content-form input[type="url"],
+.content-form textarea,
+.content-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+}
+
+.content-form textarea {
+    resize: vertical;
+    min-height: 200px;
+    min-width: 500px;
+    font-size: 17px;
+}
+
+/* Placeholder Text Color */
+::placeholder {
+    color: #888;
+}
+
+/* Button Styling */
+.content-form button {
+    background-color: rgba(143, 94, 47, 0.66);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: 140px;
+    cursor: pointer;
+    width: 300px;
+    transition: background-color 0.3s ease;
+}
+
+.content-form button:hover {
+    color: black;
+    background-color: rgba(80, 54, 29, 0.66);
+}
